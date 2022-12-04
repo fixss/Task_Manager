@@ -21,8 +21,8 @@ public class TodosTests {
 
     @Test
     public void testAddTask() {
-        todos.addTask(task.task);
-        Assertions.assertEquals("Play Games ", todos.getAllTasks());
+        todos.addTask(task.getTask());
+        Assertions.assertEquals("Play Games", todos.getAllTasks());
     }
 
     @Test
@@ -31,7 +31,7 @@ public class TodosTests {
         todos.addTask("Surf the Internet");
         todos.addTask("Clean Room");
         todos.removeTask("Surf the Internet");
-        Assertions.assertEquals("Clean Room Finish Homework ", todos.getAllTasks());
+        Assertions.assertEquals("Clean Room Finish Homework", todos.getAllTasks());
     }
 
     @Test
@@ -39,6 +39,6 @@ public class TodosTests {
         todos.addTask("Finish Homework");
         todos.addTask("Clean Room");
         todos.addTask("Surf the Internet");
-        Assertions.assertEquals("Clean Room Finish Homework Surf the Internet ", todos.getAllTasks());
+        Assertions.assertEquals("Clean Room Finish Homework Surf the Internet", todos.getAllTasks());
     }
 }
